@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7916722C247310910043214D /* MyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916722B247310910043214D /* MyAlertView.swift */; };
+		7952292B24632A700046B904 /* GlobalAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952292A24632A700046B904 /* GlobalAlertViewController.swift */; };
 		79763CE1245A0BB000057A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79763CE0245A0BB000057A7F /* AppDelegate.swift */; };
 		79763CE3245A0BB000057A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79763CE2245A0BB000057A7F /* SceneDelegate.swift */; };
 		79763CE5245A0BB000057A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79763CE4245A0BB000057A7F /* ViewController.swift */; };
@@ -14,9 +16,13 @@
 		79763CEA245A0BB200057A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79763CE9245A0BB200057A7F /* Assets.xcassets */; };
 		79763CED245A0BB200057A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79763CEB245A0BB200057A7F /* LaunchScreen.storyboard */; };
 		79763CF5245A18D700057A7F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79763CF4245A18D700057A7F /* RegisterViewController.swift */; };
+		79DC15E7247858E900D2190C /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC15E6247858E900D2190C /* AlertPresenter.swift */; };
+		79DC15E924785BB300D2190C /* MyAlertControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DC15E824785BB300D2190C /* MyAlertControllerTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7916722B247310910043214D /* MyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertView.swift; sourceTree = "<group>"; };
+		7952292A24632A700046B904 /* GlobalAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalAlertViewController.swift; sourceTree = "<group>"; };
 		79763CDD245A0BB000057A7F /* About_Aleart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = About_Aleart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79763CE0245A0BB000057A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79763CE2245A0BB000057A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		79763CEC245A0BB200057A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79763CEE245A0BB200057A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79763CF4245A18D700057A7F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		79DC15E6247858E900D2190C /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		79DC15E824785BB300D2190C /* MyAlertControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlertControllerTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7952292C24632A910046B904 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				79763CE0245A0BB000057A7F /* AppDelegate.swift */,
+				79763CE2245A0BB000057A7F /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7952292D24632ABA0046B904 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79763CE6245A0BB000057A7F /* Main.storyboard */,
+				79763CEB245A0BB200057A7F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		79763CD4245A0BB000057A7F = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +84,15 @@
 		79763CDF245A0BB000057A7F /* About_Aleart */ = {
 			isa = PBXGroup;
 			children = (
-				79763CE0245A0BB000057A7F /* AppDelegate.swift */,
-				79763CE2245A0BB000057A7F /* SceneDelegate.swift */,
+				7952292C24632A910046B904 /* SupportingFiles */,
 				79763CE4245A0BB000057A7F /* ViewController.swift */,
+				7916722B247310910043214D /* MyAlertView.swift */,
 				79763CF4245A18D700057A7F /* RegisterViewController.swift */,
-				79763CE6245A0BB000057A7F /* Main.storyboard */,
+				79DC15E824785BB300D2190C /* MyAlertControllerTwo.swift */,
+				7952292A24632A700046B904 /* GlobalAlertViewController.swift */,
+				79DC15E6247858E900D2190C /* AlertPresenter.swift */,
+				7952292D24632ABA0046B904 /* Views */,
 				79763CE9245A0BB200057A7F /* Assets.xcassets */,
-				79763CEB245A0BB200057A7F /* LaunchScreen.storyboard */,
 				79763CEE245A0BB200057A7F /* Info.plist */,
 			);
 			path = About_Aleart;
@@ -142,9 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				79763CE5245A0BB000057A7F /* ViewController.swift in Sources */,
+				79DC15E924785BB300D2190C /* MyAlertControllerTwo.swift in Sources */,
+				79DC15E7247858E900D2190C /* AlertPresenter.swift in Sources */,
 				79763CE1245A0BB000057A7F /* AppDelegate.swift in Sources */,
 				79763CE3245A0BB000057A7F /* SceneDelegate.swift in Sources */,
+				7916722C247310910043214D /* MyAlertView.swift in Sources */,
 				79763CF5245A18D700057A7F /* RegisterViewController.swift in Sources */,
+				7952292B24632A700046B904 /* GlobalAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

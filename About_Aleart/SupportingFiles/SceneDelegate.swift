@@ -18,6 +18,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let alert = MyAlertControllerTwo(title: "Confirmation", message: "Verify you are above 18", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter Your Age"
+
+        }
+        
+        let action = UIAlertAction(title: "OK", style: .default, handler: {(_) in
+            let age = Int(alert.textFields?[0].text ?? "")
+            print(age as Any)
+            
+            
+        })
+        alert.addAction(action)
+        alert.represent()
+        
+
+        
+
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

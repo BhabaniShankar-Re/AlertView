@@ -16,7 +16,14 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+ 
+    @IBAction func calButtonTapped(_ sender: Any) {
+        print("tapped")
+        let secondAlert = MyAlertView(title: "My alert View", message: "Hureee it working", preferredStyle: .alert)
+        
+        secondAlert.showAlert()
+    }
+    
     /*
     // MARK: - Navigation
 
